@@ -2,7 +2,7 @@
 
 from typing import List, Dict
 from pydantic import BaseModel, Field
-from .models import NormalizedTransaction
+from .models import NormalizedTransaction, TransactionStatus
 
 class TransactionMetrics(BaseModel):
     """Esquema de datos para almacenar los resultados de las métricas."""
@@ -31,7 +31,7 @@ def generate_metrics(
     for tx in valid_txs:
         # Conteo por estado
         if tx.status:
-            status_key = tx.status.value
+            status_key = tx.status.value if isinstance(tx.status, TransactionStatus) else tx.status
             metrics.status_counts[status_key] = metrics.status_counts.get(status_key, 0) + 1
         else:
             metrics.status_counts["NULL"] += 1

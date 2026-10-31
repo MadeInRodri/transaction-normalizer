@@ -5,8 +5,8 @@ from rich.table import Table
 from rich.panel import Panel
 from rich.text import Text
 from typing import List, Dict, Any
-from ...core.models import NormalizedTransaction
-from ...core.metrics import TransactionMetrics
+from core.models import NormalizedTransaction
+from core.metrics import TransactionMetrics
 
 # Inicializamos la consola para renderizar los elementos
 console = Console()
