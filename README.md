@@ -57,11 +57,11 @@ Al elegir la opción 1, introduce una ruta relativa desde la raíz, por ejemplo 
 - Leer un archivo JSON cuyo contenido sea una lista de transacciones.
 - Reconocer tres formatos de origen:
 
-  | Formato | Identificador | Fecha | Monto | Estado |
-  | --- | --- | --- | --- | --- |
-  | A | `id` | `timestamp` | `amount` y `currency` | `status` |
-  | B | `transaction_id` | `created_at` | `total` en centavos y `currency_code` | `state` |
-  | C | `ref` | `date` | `amount` con símbolo de moneda | `result` |
+  | Formato | Identificador    | Fecha        | Monto                                 | Estado   |
+  | ------- | ---------------- | ------------ | ------------------------------------- | -------- |
+  | A       | `id`             | `timestamp`  | `amount` y `currency`                 | `status` |
+  | B       | `transaction_id` | `created_at` | `total` en centavos y `currency_code` | `state`  |
+  | C       | `ref`            | `date`       | `amount` con símbolo de moneda        | `result` |
 
 - Normalizar los registros aceptados a un modelo común con ID, monto en USD, monto y moneda originales, fecha, estado y fuente.
 - Estandarizar los estados reconocidos:
@@ -185,3 +185,4 @@ En el estado actual, las dependencias entre componentes se expresan mediante imp
 
 - [Especificación técnica](docs/requirements.md)
 - [Resultados esperados de las pruebas](docs/test-results.md)
+- [Nota técnica](docs/nota-tecnica.md)
