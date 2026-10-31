@@ -1,0 +1,102 @@
+[
+  {
+    "id": "tx_001",
+    "amount": "100.50",
+    "currency": "USD",
+    "timestamp": "2025-01-10 10:00:00",
+    "status": "completed"
+  },
+  {
+    "id": "tx_002",
+    "amount": "250.00",
+    "currency": "EUR",
+    "timestamp": "2025-01-11 11:30:00",
+    "status": "waiting"
+  },
+  {
+    "id": "tx_003",
+    "amount": "15.99",
+    "currency": "USD",
+    "timestamp": "2025-01-12 09:15:00",
+    "status": "failed"
+  },
+  {
+    "id": "tx_004",
+    "amount": "500.00",
+    "currency": "USD",
+    "timestamp": "2025-01-13 14:20:00",
+    "status": "completed"
+  },
+  {
+    "id": "tx_005",
+    "amount": "80.25",
+    "currency": "EUR",
+    "timestamp": "2025-01-14 16:45:00",
+    "status": "completed"
+  },
+  {
+    "transaction_id": 201,
+    "total": 15000,
+    "currency_code": "usd",
+    "created_at": "15/01/2025 10:00",
+    "state": "OK"
+  },
+  {
+    "transaction_id": 202,
+    "total": 35050,
+    "currency_code": "eur",
+    "created_at": "16/01/2025 11:30",
+    "state": "WAIT"
+  },
+  {
+    "transaction_id": 203,
+    "total": 999,
+    "currency_code": "usd",
+    "created_at": "17/01/2025 09:15",
+    "state": "FAIL"
+  },
+  {
+    "transaction_id": 204,
+    "total": 42000,
+    "currency_code": "usd",
+    "created_at": "18/01/2025 14:20",
+    "state": "OK"
+  },
+  {
+    "transaction_id": 205,
+    "total": 12575,
+    "currency_code": "eur",
+    "created_at": "19/01/2025 16:45",
+    "state": "OK"
+  },
+  {
+    "ref": "A-01",
+    "amount": "€99,99",
+    "date": "2025-01-20T10:00:00Z",
+    "result": "success"
+  },
+  {
+    "ref": "A-02",
+    "amount": "$150.50",
+    "date": "2025-01-21T11:30:00Z",
+    "result": "pending"
+  },
+  {
+    "ref": "A-03",
+    "amount": "€15,00",
+    "date": "2025-01-22T09:15:00Z",
+    "result": "failed"
+  },
+  {
+    "ref": "A-04",
+    "amount": "$300.00",
+    "date": "2025-01-23T14:20:00Z",
+    "result": "success"
+  },
+  {
+    "ref": "A-05",
+    "amount": "€45,50",
+    "date": "2025-01-24T16:45:00Z",
+    "result": "success"
+  }
+]
